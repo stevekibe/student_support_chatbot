@@ -3,31 +3,38 @@ document.addEventListener('DOMContentLoaded', () => {
     const userInput = document.getElementById('user-input');
     const sendButton = document.getElementById('send-button');
 
+    // Helper function to convert Markdown-style links to HTML <a> tags
+    function convertMarkdownLinksToHtml(text) {
+        
+        const regex = /\[([^\]]+)\]\((https?:\/\/[^)]+)\)/g;
+       
+        return text.replace(regex, '<a href="$2" target="_blank" class="text-blue-600 hover:underline">$1</a>');
+    }
+
     // Function to display messages in the chat interface
     function displayMessage(message, sender) {
         const messageDiv = document.createElement('div');
         messageDiv.classList.add('message', `${sender}-message`);
-        // Using innerHTML to allow for links (e.g., from the knowledge base)
-        messageDiv.innerHTML = message;
+        
+        messageDiv.innerHTML = convertMarkdownLinksToHtml(message);
         chatMessages.appendChild(messageDiv);
-        // Auto-scroll to the bottom of the chat window
+      
         chatMessages.scrollTop = chatMessages.scrollHeight;
     }
 
     // Function to send message to backend and get response
     async function sendMessage() {
         const userText = userInput.value.trim();
-        if (userText === '') return; // Do nothing if input is empty
+        if (userText === '') return; 
 
         // Display user's message immediately
         displayMessage(userText, 'user');
-        userInput.value = ''; // Clear the input field
-        userInput.disabled = true; // Disable input while waiting for response
-        sendButton.disabled = true; // Disable send button
+        userInput.value = ''; 
+        userInput.disabled = true; 
+        sendButton.disabled = true; 
 
         try {
             // Make a POST request to your Django backend's chat API endpoint
-            // IMPORTANT: Ensure this URL matches your Django server's address and path
             const response = await fetch('http://127.0.0.1:8000/api/chat/', {
                 method: 'POST',
                 headers: {

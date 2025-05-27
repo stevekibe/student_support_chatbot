@@ -1,153 +1,153 @@
 /* Base styles for the body and overall layout */
 body {
     font-family: 'Inter', sans-serif;
-    background-color: #f0f2f5; /* Light gray background */
+    background-color: #f0f2f5; 
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh; /* Full viewport height */
+    min-height: 100vh; 
     margin: 0;
-    padding: 20px; /* Padding around the chat container */
-    box-sizing: border-box; /* Include padding in element's total width and height */
+    padding: 20px; 
+    box-sizing: border-box; 
 }
 
 /* Chat container styling */
 .chat-container {
     width: 100%;
-    max-width: 500px; /* Maximum width for desktop */
-    height: 70vh; /* Responsive height, 70% of viewport height */
-    min-height: 400px; /* Minimum height to ensure usability */
-    background-color: #ffffff; /* White background for the chatbox */
-    border-radius: 12px; /* Rounded corners for the container */
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    max-width: 500px; 
+    height: 70vh; 
+    min-height: 400px; 
+    background-color: #ffffff; 
+    border-radius: 12px; 
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
     display: flex;
-    flex-direction: column; /* Stack elements vertically */
-    overflow: hidden; /* Hide overflowing content */
-    border: 1px solid #e0e0e0; /* Subtle border */
+    flex-direction: column; 
+    overflow: hidden; 
+    border: 1px solid #e0e0e0; 
 }
 
 /* Chat header styling */
 .chat-header {
-    background-color: #4f46e5; /* Indigo 600 - a vibrant university color */
+    background-color: #4f46e5; 
     color: white;
-    padding: 1rem; /* Padding inside the header */
+    padding: 1rem; 
     text-align: center;
-    font-size: 1.25rem; /* Larger font size for title */
-    font-weight: 600; /* Semi-bold font weight */
-    border-top-left-radius: 12px; /* Match container's top-left radius */
-    border-top-right-radius: 12px; /* Match container's top-right radius */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* Small shadow for header */
+    font-size: 1.25rem; 
+    font-weight: 600; 
+    border-top-left-radius: 12px; 
+    border-top-right-radius: 12px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); 
 }
 
 /* Chat messages area styling */
 .chat-messages {
-    flex-grow: 1; /* Allows this area to take up available space */
+    flex-grow: 1; 
     padding: 1rem;
-    overflow-y: auto; /* Enable vertical scrolling if messages overflow */
+    overflow-y: auto; 
     display: flex;
-    flex-direction: column; /* Stack messages vertically */
-    gap: 0.75rem; /* Space between messages */
-    background-color: #f9fafb; /* Very light gray background for message area */
+    flex-direction: column; 
+    gap: 0.75rem; 
+    background-color: #f9fafb;
 }
 
 /* Individual message bubble styling */
 .message {
     padding: 0.75rem 1rem;
-    border-radius: 1.25rem; /* More rounded corners for bubbles */
-    max-width: 85%; /* Limit message width */
-    word-wrap: break-word; /* Break long words */
-    line-height: 1.4; /* Comfortable line spacing */
-    font-size: 0.95rem; /* Slightly smaller font for messages */
+    border-radius: 1.25rem; 
+    max-width: 85%; 
+    word-wrap: break-word; 
+    line-height: 1.4; 
+    font-size: 0.95rem; 
 }
 
 /* User message specific styling */
 .user-message {
-    background-color: #e0e7ff; /* Indigo 100 - light blue */
-    color: #1e3a8a; /* Indigo 900 - dark blue text */
-    align-self: flex-end; /* Align user messages to the right */
-    border-bottom-right-radius: 0.25rem; /* Slightly sharper corner for user message */
+    background-color: #e0e7ff; 
+    color: #1e3a8a; 
+    align-self: flex-end; 
+    border-bottom-right-radius: 0.25rem; 
 }
 
 /* Bot message specific styling */
 .bot-message {
-    background-color: #e5e7eb; /* Gray 200 - light gray */
-    color: #374151; /* Gray 700 - dark gray text */
-    align-self: flex-start; /* Align bot messages to the left */
-    border-bottom-left-radius: 0.25rem; /* Slightly sharper corner for bot message */
+    background-color: #e5e7eb;
+    color: #374151; 
+    align-self: flex-start; 
+    border-bottom-left-radius: 0.25rem; 
 }
 
 /* Input container styling */
 .chat-input-container {
     display: flex;
     padding: 1rem;
-    border-top: 1px solid #e0e0e0; /* Separator line */
-    background-color: #ffffff; /* White background for input area */
-    gap: 0.75rem; /* Space between input and button */
+    border-top: 1px solid #e0e0e0; 
+    background-color: #ffffff; 
+    gap: 0.75rem; 
 }
 
 /* User input field styling */
 #user-input {
-    flex-grow: 1; /* Allows input to take most of the space */
+    flex-grow: 1; 
     padding: 0.75rem 1rem;
-    border: 1px solid #d1d5db; /* Gray 300 border */
-    border-radius: 9999px; /* Fully rounded input field */
-    outline: none; /* Remove default outline on focus */
+    border: 1px solid #d1d5db; 
+    border-radius: 9999px; 
+    outline: none; 
     font-size: 1rem;
-    transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* Smooth transitions for focus */
+    transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out; 
 }
 
 #user-input:focus {
-    border-color: #6366f1; /* Indigo 500 border on focus */
-    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2); /* Focus ring effect */
+    border-color: #6366f1; 
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2); 
 }
 
 /* Send button styling */
 #send-button {
-    background-color: #6366f1; /* Indigo 500 - primary button color */
+    background-color: #6366f1; 
     color: white;
     border: none;
-    border-radius: 9999px; /* Fully rounded button */
+    border-radius: 9999px;
     padding: 0.75rem 1.5rem;
-    cursor: pointer; /* Pointer cursor on hover */
+    cursor: pointer; 
     font-size: 1rem;
     font-weight: 600;
-    transition: background-color 0.2s ease-in-out, transform 0.1s ease-in-out; /* Smooth transitions */
-    box-shadow: 0 4px 10px rgba(99, 102, 241, 0.2); /* Soft shadow for button */
+    transition: background-color 0.2s ease-in-out, transform 0.1s ease-in-out; 
+    box-shadow: 0 4px 10px rgba(99, 102, 241, 0.2); 
 }
 
 #send-button:hover {
-    background-color: #4f46e5; /* Darker indigo on hover */
-    transform: translateY(-1px); /* Slight lift effect */
+    background-color: #4f46e5;
+    transform: translateY(-1px); 
 }
 
 #send-button:active {
-    transform: translateY(0); /* Press down effect */
-    box-shadow: 0 2px 5px rgba(99, 102, 241, 0.3); /* Smaller shadow when active */
+    transform: translateY(0); 
+    box-shadow: 0 2px 5px rgba(99, 102, 241, 0.3); 
 }
 
 #send-button:disabled {
-    background-color: #a7a7a7; /* Grey out when disabled */
+    background-color: #a7a7a7; 
     cursor: not-allowed;
     box-shadow: none;
     transform: none;
 }
 
-/* Responsive adjustments for smaller screens (e.g., mobile) */
+/* Responsive adjustments for smaller screens */
 @media (max-width: 640px) {
     body {
-        padding: 0; /* Remove body padding on small screens */
+        padding: 0; 
     }
     .chat-container {
-        height: 100vh; /* Full viewport height on small screens */
-        width: 100vw; /* Full viewport width */
-        max-width: none; /* Remove max-width constraint */
-        border-radius: 0; /* No border-radius for full screen */
-        box-shadow: none; /* No shadow for full screen */
+        height: 100vh; 
+        width: 100vw; 
+        max-width: none; 
+        border-radius: 0; 
+        box-shadow: none; 
     }
     .chat-header {
-        border-radius: 0; /* No border-radius for full screen */
+        border-radius: 0; 
     }
     .message {
-        max-width: 90%; /* Allow messages to be slightly wider */
+        max-width: 90%;
     }
 }
