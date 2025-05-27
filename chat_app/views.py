@@ -10,6 +10,9 @@ from dotenv import load_dotenv
 # Load environment variables from .env file (ensure this runs)
 load_dotenv()
 
+def home_view(request):
+    return render(request, 'index.html') 
+
 # --- Configuration ---
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 if not GEMINI_API_KEY:
