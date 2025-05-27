@@ -1,0 +1,62 @@
+
+[
+  {
+    "category": "General",
+    "question_phrasings": [
+      "hello",
+      "hi",
+      "hey",
+      "how are you"
+    ],
+    "answer": "Hello! I'm your student support chatbot. How can I assist you today? I can answer questions about admissions, financial aid, or registration."
+  },
+  {
+    "category": "Admissions",
+    "question_phrasings": [
+      "how do i apply",
+      "admission process",
+      "application requirements",
+      "international admissions"
+    ],
+    "answer": "To apply for admission, please visit our official admissions page: [https://www.university.edu/admissions](https://www.university.edu/admissions). You'll find application forms, deadlines, and requirements there. For international students, specific English proficiency, transcript, and visa details are on the international admissions section."
+  },
+  {
+    "category": "Financial Aid",
+    "question_phrasings": [
+      "financial aid information",
+      "how to get financial aid",
+      "scholarships",
+      "fafsa deadlines"
+    ],
+    "answer": "You can find comprehensive information about financial aid, scholarships, and FAFSA deadlines on the Financial Aid Office website: [https://www.university.edu/financialaid](https://www.university.edu/financialaid). We offer various merit-based, need-based, and departmental scholarships."
+  },
+  {
+    "category": "Registration & Academics",
+    "question_phrasings": [
+      "how to register for classes",
+      "register units",
+      "registration process of units",
+      "when does registration open",
+      "enroll in units",
+      "academic advisor",
+      "view my grades",
+      "withdraw from course",
+      "course catalog"
+    ],
+    "answer": "Course registration typically opens a few weeks before the start of each semester. You can register via your student portal by navigating to the 'Course Registration' section. Check the academic calendar for exact dates and prerequisites. Your academic advisor's info is in your student portal; contact the Registrar's Office if needed. You can view grades in your portal under 'Academic Records'. To withdraw, consult the academic calendar for deadlines and follow portal instructions. The full course catalog is online at [https://www.university.edu/coursecatalog](https://www.university.edu/coursecatalog)."
+  },
+  {
+    "category": "Campus Life & Services",
+    "question_phrasings": [
+      "registrar's office location",
+      "library hours",
+      "student ID card",
+      "campus map",
+      "contact support",
+      "career services",
+      "housing options",
+      "student clubs"
+    ],
+    "answer": "The Registrar's Office is on the first floor of the Main Administration Building, Room 102. Library hours vary; check [https://www.university.edu/library](https://www.university.edu/library). Get your student ID at Campus Services office. A campus map is at [https://www.university.edu/campusmap](https://www.university.edu/campusmap). For further assistance, contact support at support@university.edu or (123) 456-7890. Career Services offers job assistance and counseling; visit [https://www.university.edu/careerservices](https://www.university.edu/careerservices) for appointments. Housing info is at [https://www.university.edu/housing](https://www.university.edu/housing). Find student clubs info on the Student Life webpage."
+  }
+]
